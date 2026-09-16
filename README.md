@@ -1,41 +1,38 @@
-# CCPSHSS-ARCADE
-Building out our Arcade suite for history and social studies
+# CCPS HSS Arcade
 
-## First game: Virginia Navigator
+A growing collection of standalone history and social studies browser games. Each game has its own source, content, documentation, and downloadable HTML release.
 
-Open `releases/Virginia-Navigator.html` directly in Chrome. No installation, server, login, or internet connection is needed. Upload that one file to Google Drive; students download it and open the downloaded file in Chrome. Drive preview is not the game player. Managed school devices may restrict local HTML; verify on a student device before distribution.
+## Game catalog
 
-Four short cargo expeditions teach the James/Richmond, York/Yorktown, Rappahannock/Fredericksburg, and Potomac/Alexandria relationships. Students navigate connected river bends, follow upstream/downstream directions, and carry cargo around Richmond's Fall Line rapids. No trivia gates, timer, leaderboard, or failure penalty. Use mouse/touch on map markers, or Tab/arrow keys and Enter/Space. Zoom enlarges the map around the cargo. The field guide, optional hints, immediate feedback, and discovery notebook support learning.
+| Game | Experience | Guide | Standalone HTML |
+| --- | --- | --- | --- |
+| River Expedition: James River | A pixel-art river adventure with hazards, landings, field notes, and questions. | [Game guide](games/river-expedition/README.md) | [Game file](dist/River-Expedition-James-River.html) |
+| Virginia Navigator | Short cargo missions exploring Virginia river-and-city relationships. Preserved original prototype. | [Game guide](games/virginia-navigator/README.md) | [Game file](releases/Virginia-Navigator.html) |
 
-### Build and verify
+## River Expedition: James River
 
-Requires Node.js 20+ for development only; no packages to install.
+A four-stop adventure with continuous steering, randomized obstacles, automatic docking, collectible hearts, a journal, and a geographic reference map. Each landing includes five docking questions, a Field Note, and five camp questions.
 
-```sh
-node tools/build.mjs
-node --test tests/model.test.mjs
-```
+- Source and content: [games/river-expedition](games/river-expedition/)
+- Build: `npm run build:river`
+- Test: `npm run test:river`
+- [Architecture](games/river-expedition/ARCHITECTURE.md) · [Curriculum](games/river-expedition/docs/CURRICULUM.md) · [Map sources](games/river-expedition/docs/MAP-0.11.md)
 
-The build deterministically embeds the content, map, CSS, and JavaScript into the release. Do not edit the release directly. On restricted hosts that block test subprocesses, Node 24 can use `node --test --test-isolation=none tests/model.test.mjs`.
+## Virginia Navigator
 
-### Structure and offline rules
+The original map-navigation prototype covers the James/Richmond, York/Yorktown, Rappahannock/Fredericksburg, and Potomac/Alexandria relationships. It remains a separate game with its own release.
 
-- `games/virginia-navigator/content/`: versioned mission data and geographic coordinates, independent of UI.
-- `games/virginia-navigator/src/model.js`: route rules and state; no DOM dependency.
-- `games/virginia-navigator/src/game.js`: SVG renderer and input mapping; all inputs call the same model actions.
-- `games/virginia-navigator/src/index.html` and `style.css`: accessible DOM interface and presentation.
-- `tools/build.mjs`: single-file exporter. `releases/`: distributable HTML. `tests/`: model and export checks. `docs/`: sources and test evidence.
+- Source and content: [games/virginia-navigator](games/virginia-navigator/)
+- Build: `npm run build`
+- Test: `npm test`
+- [Sources](docs/SOURCES.md) · [Test notes](docs/TESTING.md)
 
-Future games should use their own `games/<slug>/src` and `content` directories, with a stable, versioned content schema. Keep subject matter out of renderer code where practical. Extend the exporter with an explicit game manifest when adding the second game; share only proven common input/build helpers. Add content-specific validation and learning-objective tests with each pack. Never load JSON through fetch in the release: embed it at build time.
+## Playing and sharing
 
-Runtime rules: no CDN, remote font, API, analytics, external assets, module imports, service worker, or web-server requirement. Inline or embed every asset. Preserve the restrictive Content Security Policy; network connections are disabled. The current game stores progress only in memory and resets on reload, avoiding file-origin storage differences and student data collection.
+Download a game's HTML file, then open it locally in Chrome. Each release runs without internet, installation, or login. Google Drive can distribute the file; students download it rather than play inside Drive preview. Check local-file support on managed student devices.
 
-The SVG/vanilla-JavaScript implementation is intentional: this geographic route game does not need a physics engine, and benefits from keyboard-focusable markers and a small dependency-free release.
+## Adding future games
 
-### Scope and remaining work
+Create a separate `games/<game-name>/` folder containing its README, source, content, and any assets. Give each game an independent build command and a uniquely named standalone HTML release, then add it to the catalog above. Preserve existing games when adding new ones. Node.js 20+ is needed only for development; builds and model tests require no package installation.
 
-This is a first playable release covering selected 2023 VS.1b/c geography concepts, not the whole Virginia Studies blueprint. It does not teach all five regions, bordering states, Lake Drummond, the Dismal Swamp, or Indigenous history. See `docs/SOURCES.md` for curriculum verification limits. Geography is generalized, with accurate relative locations and real city coordinates, not survey-grade river geometry. The map shows eastern Virginia only, river segments only, and an approximate Fall Line. Complete a teacher content review and a managed Chromebook/physical touch-device check before classroom rollout. No persistent progress or audio narration yet.
-
-## River Expedition — new continuous-navigation game
-
-The separate **River Expedition** game is now in `games/river-expedition/`. Open `dist/River-Expedition-James-River.html` directly in Chrome for the four-leg James River adventure. It includes continuous boat steering, recoverable hazards, cargo landings, a Fall Line portage, and an expedition journal. See [its README](games/river-expedition/README.md) for controls, build instructions, test results, and future content packs. Virginia Navigator remains unchanged.
+All releases must embed their scripts, styles, content, fonts, and assets. No runtime APIs, CDNs, analytics, remote assets, or server requirement. Keep editable source separate from generated releases and rebuild rather than editing exported HTML. Share helpers only when multiple games actually need them.
