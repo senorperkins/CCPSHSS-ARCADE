@@ -1,0 +1,1148 @@
+{
+  "schemaVersion": 1,
+  "id": "james",
+  "name": "James River",
+  "subtitle": "From the bay to the Fall Line",
+  "seed": 1607,
+  "standards": [
+    "VS.1b",
+    "VS.1c",
+    "VS.3a",
+    "VS.3b",
+    "VS.3d",
+    "VS.3e",
+    "VS.4a"
+  ],
+  "intro": "Captain your little survey boat inland on the James. Find safe channels, deliver supplies, and discover why rivers shaped Virginia. At Richmond, the river will ask you to find a new way forward.",
+  "historicalContext": "This is an imagined learning expedition, not a reenactment. Indigenous peoples lived along and traveled these waterways long before English colonists founded Jamestown in 1607. Their communities continue today.",
+  "places": [
+    {
+      "id": "bay",
+      "name": "Chesapeake connection",
+      "lon": -76.3,
+      "lat": 36.96,
+      "revealAt": null
+    },
+    {
+      "id": "jamestown",
+      "name": "Jamestown",
+      "lon": -76.778,
+      "lat": 37.209,
+      "revealAt": "tidal"
+    },
+    {
+      "id": "richmond",
+      "name": "Richmond / Fall Line",
+      "lon": -77.436,
+      "lat": 37.535,
+      "revealAt": "falls"
+    }
+  ],
+  "legs": [
+    {
+      "id": "tidal",
+      "name": "The wide tidal James",
+      "destination": "Jamestown landing",
+      "length": 4705,
+      "mode": "boat",
+      "width": 290,
+      "bend": 37,
+      "current": 2,
+      "hazardCount": 28,
+      "kinds": [
+        "log",
+        "shoal"
+      ],
+      "tidal": true,
+      "objective": "Follow the deep blue channel. Steer around driftwood and pale shallows.",
+      "arrival": "Cross the gold landing line anywhere in the channel. Your boat docks automatically.",
+      "checkpoint": "map",
+      "journalTitle": "A place on the James",
+      "journal": "Jamestown was founded by English colonists in 1607 on the James River, upstream from its Chesapeake Bay connection. The river offered deep-water access for ships. This was already Indigenous homeland.",
+      "observation": "Broad tidal water connects the James to the Chesapeake Bay. Tides can change local currents.",
+      "speed": 62,
+      "landingIntro": "You have reached Jamestown on the James River. Your boat is safely moored. Complete the docking log, read a field note, then prepare camp with five more questions.",
+      "fieldNote": {
+        "title": "A foothold on the James",
+        "text": "English settlers established Jamestown in 1607 in the Coastal Plain. The Virginia Company hoped to earn money. Deep water let ships approach, but unhealthy drinking water and food shortages threatened survival. Trade with Powhatan communities helped provide food. Tobacco later became a valuable crop for sale.",
+        "keyTerms": [
+          "Jamestown",
+          "1607",
+          "Coastal Plain",
+          "Virginia Company",
+          "Deep water",
+          "drinking water",
+          "Powhatan",
+          "Tobacco"
+        ]
+      },
+      "questions": {
+        "dock": [
+          {
+            "id": "j-d1",
+            "prompt": "Jamestown and Richmond both developed beside which river?",
+            "choices": [
+              "James River",
+              "York River",
+              "Potomac River",
+              "Rappahannock River"
+            ],
+            "correct": 0,
+            "explanation": "Both places lie along the James.",
+            "source": "nps-pocket",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Recall the waterway joining the two places on your journey.",
+            "standards": [
+              "VS.1c"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "j-d2",
+            "prompt": "Jamestown lies in which Virginia region?",
+            "choices": [
+              "Coastal Plain (Tidewater)",
+              "Piedmont",
+              "Blue Ridge Mountains",
+              "Appalachian Plateau"
+            ],
+            "correct": 0,
+            "explanation": "Jamestown is in Virginia’s eastern Coastal Plain.",
+            "source": "dcr-regions",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Picture the settlement’s position near the coast.",
+            "standards": [
+              "VS.1b"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "j-d3",
+            "prompt": "A vessel leaving the mouth of the James enters which body of water?",
+            "choices": [
+              "Chesapeake Bay",
+              "Lake Drummond",
+              "New River",
+              "Potomac River"
+            ],
+            "correct": 0,
+            "explanation": "The James empties into the Chesapeake Bay.",
+            "source": "nps-pocket",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Recall the large body of water at your starting point.",
+            "standards": [
+              "VS.1c"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "j-d4",
+            "prompt": "Which feature helped large English ships reach Jamestown?",
+            "choices": [
+              "Deep water beside the settlement",
+              "A mountain pass beside the settlement",
+              "A waterfall beside the settlement",
+              "A narrow footpath beside the settlement"
+            ],
+            "correct": 0,
+            "explanation": "Ships could approach the shore because the water was deep.",
+            "source": "nps-site",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Think about the space needed beneath a ship’s hull.",
+            "standards": [
+              "VS.3b"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "j-d5",
+            "prompt": "Why did investors support the English colony at Jamestown?",
+            "choices": [
+              "They hoped to earn a profit",
+              "They wanted to end overseas trade",
+              "They wanted to close English ports",
+              "They hoped to stop all farming"
+            ],
+            "correct": 0,
+            "explanation": "The Virginia Company expected an economic return.",
+            "source": "nps-history",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Consider what investors expect from a successful business.",
+            "standards": [
+              "VS.3a"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          }
+        ],
+        "camp": [
+          {
+            "id": "j-c1",
+            "prompt": "Which statement best explains a benefit of Jamestown’s river location?",
+            "choices": [
+              "Ships could bring people and supplies",
+              "The river prevented every disease",
+              "The river removed the need for crops",
+              "Ships could travel through any rapids"
+            ],
+            "correct": 0,
+            "explanation": "River access supported deliveries to the settlement.",
+            "source": "nps-riverfront",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Think about what an arriving vessel could carry.",
+            "standards": [
+              "VS.3b"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "j-c2",
+            "prompt": "Which problem threatened survival at early Jamestown?",
+            "choices": [
+              "Unsafe drinking water",
+              "Too many harvested crops",
+              "Too much stored fresh food",
+              "A shortage of ocean water"
+            ],
+            "correct": 0,
+            "explanation": "Unhealthy water contributed to illness.",
+            "source": "nps-site",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "A place useful for shipping may not meet every daily need.",
+            "standards": [
+              "VS.3e"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "j-c3",
+            "prompt": "How did trade with Powhatan communities help English settlers survive?",
+            "choices": [
+              "It provided needed food",
+              "It removed all disagreements",
+              "It ended the need for shelter",
+              "It supplied railroad engines"
+            ],
+            "correct": 0,
+            "explanation": "Food obtained through trade helped sustain colonists.",
+            "source": "nps-history",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Think about a basic need during a shortage.",
+            "standards": [
+              "VS.3d"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "j-c4",
+            "prompt": "Which crop became important to Jamestown’s economic survival?",
+            "choices": [
+              "Tobacco",
+              "Cotton",
+              "Rice",
+              "Sugarcane"
+            ],
+            "correct": 0,
+            "explanation": "Tobacco became a profitable export.",
+            "source": "nps-tobacco",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Recall the crop described in the Field Note.",
+            "standards": [
+              "VS.3e"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "j-c5",
+            "prompt": "A site has room for ships but unhealthy drinking water. What does this show about choosing Jamestown?",
+            "choices": [
+              "The site had both advantages and problems",
+              "Shipping access solved every problem",
+              "The site had no connection to trade",
+              "Drinking water did not matter"
+            ],
+            "correct": 0,
+            "explanation": "Access for ships did not ensure safe water for people.",
+            "source": "nps-site",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Consider the two different needs described in the question.",
+            "standards": [
+              "VS.3b"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          }
+        ]
+      },
+      "heartCount": 3,
+      "targetTravelSeconds": 75,
+      "waterSaturation": 38
+    },
+    {
+      "id": "cargo",
+      "name": "The river is a road",
+      "destination": "Expedition supply landing",
+      "length": 5755,
+      "mode": "boat",
+      "width": 245,
+      "bend": 51,
+      "current": 4,
+      "hazardCount": 32,
+      "kinds": [
+        "log",
+        "shoal",
+        "rock"
+      ],
+      "tidal": true,
+      "objective": "Carry your supplies inland. Read the bends and line up with the open water.",
+      "arrival": "Cross the gold landing line anywhere in the channel. Your boat docks automatically.",
+      "checkpoint": "cargo",
+      "journalTitle": "A water road",
+      "journal": "You brought cargo straight to a river landing. Navigable rivers connected settlements to supplies and trade. The supply landing in our game is fictional; its connection to the water demonstrates a real geographic advantage.",
+      "observation": "A landing connects boats to people on shore. Rivers moved both people and goods.",
+      "speed": 76,
+      "landingIntro": "Your boat has reached our expedition supply landing. This stop is fictional, but using a river to move goods is part of Virginia’s real history.",
+      "fieldNote": {
+        "title": "A river full of trade",
+        "text": "Colonial farms sent tobacco to river wharves for shipment to England. A crop grown for sale is a cash crop. Ships brought tools and other supplies back. Farmers depended on buyers, and a failed harvest could reduce their income. Enslaved people and indentured servants performed much of the difficult labor behind this trade.",
+        "keyTerms": [
+          "tobacco",
+          "England",
+          "cash crop",
+          "Enslaved people",
+          "indentured servants"
+        ]
+      },
+      "questions": {
+        "dock": [
+          {
+            "id": "s-d1",
+            "prompt": "Why were river landings useful to colonial communities along the James?",
+            "choices": [
+              "They connected farms with shipping routes",
+              "They made nearby fields into mountains",
+              "They stopped all tides in the river",
+              "They prevented crops from spoiling"
+            ],
+            "correct": 0,
+            "explanation": "Landings linked local production with water transport.",
+            "source": "nps-riverfront",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Imagine moving a heavy harvest beyond the farm.",
+            "standards": [
+              "VS.1c"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "s-d2",
+            "prompt": "Low land near Virginia’s Atlantic coast is characteristic of which region?",
+            "choices": [
+              "Coastal Plain (Tidewater)",
+              "Valley and Ridge",
+              "Blue Ridge Mountains",
+              "Appalachian Plateau"
+            ],
+            "correct": 0,
+            "explanation": "The Coastal Plain occupies eastern Virginia.",
+            "source": "dcr-regions",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Compare this landscape with Virginia’s western regions.",
+            "standards": [
+              "VS.1b"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "s-d3",
+            "prompt": "A colonial farmer grows a crop mainly to sell. Which term describes that crop?",
+            "choices": [
+              "Cash crop",
+              "Subsistence meal",
+              "Household tool",
+              "Natural harbor"
+            ],
+            "correct": 0,
+            "explanation": "A cash crop is produced for sale.",
+            "source": "nps-tobacco",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Focus on the farmer’s purpose for growing it.",
+            "standards": [
+              "VS.4a"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "s-d4",
+            "prompt": "Which product was commonly loaded onto ships at colonial James River landings?",
+            "choices": [
+              "Barrels of tobacco",
+              "Crates of automobiles",
+              "Containers of computers",
+              "Tanks of jet fuel"
+            ],
+            "correct": 0,
+            "explanation": "Tobacco was shipped from riverfront docks.",
+            "source": "nps-tobacco",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Place the delivery in the colonial period.",
+            "standards": [
+              "VS.4a"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "s-d5",
+            "prompt": "Which route connected lower James River settlements with overseas trade?",
+            "choices": [
+              "James River → Chesapeake Bay → Atlantic Ocean",
+              "James River → Lake Drummond → Pacific Ocean",
+              "James River → New River → Gulf of Mexico",
+              "James River → Great Lakes → Arctic Ocean"
+            ],
+            "correct": 0,
+            "explanation": "The James connects to the bay and then the Atlantic.",
+            "source": "nps-pocket",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Trace the journey outward from the Virginia coast.",
+            "standards": [
+              "VS.1c"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          }
+        ],
+        "camp": [
+          {
+            "id": "s-c1",
+            "prompt": "Why did demand for tobacco in England matter to Virginia farmers?",
+            "choices": [
+              "It gave them buyers for their crop",
+              "It made every harvest successful",
+              "It removed the need for workers",
+              "It prevented changes in prices"
+            ],
+            "correct": 0,
+            "explanation": "English demand supported tobacco sales.",
+            "source": "nps-tobacco",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Consider the relationship between a seller and a customer.",
+            "standards": [
+              "VS.4a"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "s-c2",
+            "prompt": "A ship unloads tools and takes on crops at a James River wharf. What does this show?",
+            "choices": [
+              "The river supported trade in both directions",
+              "The river was used only for fishing",
+              "The colony produced everything it needed",
+              "Only empty vessels could use the river"
+            ],
+            "correct": 0,
+            "explanation": "Wharves handled incoming goods and outgoing crops.",
+            "source": "nps-riverfront",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Compare what arrives with what leaves.",
+            "standards": [
+              "VS.1c"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "s-c3",
+            "prompt": "Why was a failed tobacco harvest a serious problem for a colonial farmer?",
+            "choices": [
+              "It could reduce income from crop sales",
+              "It moved the farm to another region",
+              "It caused the river to flow backward",
+              "It ended the ocean’s tides"
+            ],
+            "correct": 0,
+            "explanation": "A smaller saleable harvest could mean less income.",
+            "source": "nps-tobacco",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Think about how the farmer planned to pay for supplies.",
+            "standards": [
+              "VS.4a"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "s-c4",
+            "prompt": "Which location would best help a colonial farm ship heavy goods?",
+            "choices": [
+              "Beside a navigable river",
+              "Beyond an impassable cliff",
+              "Far from every transport route",
+              "On a steep isolated peak"
+            ],
+            "correct": 0,
+            "explanation": "Navigable water provided access to transport.",
+            "source": "nps-riverfront",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Imagine moving loaded barrels from each proposed site.",
+            "standards": [
+              "VS.1c"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "s-c5",
+            "prompt": "What does Virginia’s colonial tobacco trade show about its economy?",
+            "choices": [
+              "Farming was connected to overseas markets",
+              "Farming had no connection to trade",
+              "Every household made all its own goods",
+              "Only manufactured engines were exported"
+            ],
+            "correct": 0,
+            "explanation": "Agricultural goods linked Virginia to buyers abroad.",
+            "source": "nps-tobacco",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Follow the crop from its producer to its buyer.",
+            "standards": [
+              "VS.4a"
+            ],
+            "region": "Coastal Plain (Tidewater) / James River",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          }
+        ]
+      },
+      "heartCount": 3,
+      "targetTravelSeconds": 75,
+      "waterSaturation": 43
+    },
+    {
+      "id": "falls",
+      "name": "The river changes",
+      "destination": "Richmond · Fall Line",
+      "length": 6805,
+      "mode": "boat",
+      "width": 220,
+      "bend": 39,
+      "current": 12,
+      "hazardCount": 36,
+      "kinds": [
+        "rock",
+        "rock",
+        "log",
+        "shoal"
+      ],
+      "tidal": false,
+      "objective": "Rockier water ahead. Slow down to find gaps; the current pushes against you.",
+      "arrival": "Cross the gold landing line anywhere in the channel. Your boat docks automatically.",
+      "checkpoint": "portage",
+      "journalTitle": "Where boats must stop",
+      "journal": "Richmond sits at the Fall Line between the Coastal Plain and Piedmont. Rapids interrupt river navigation. Transferring goods between water and land helped trading centers grow.",
+      "observation": "More exposed rock and stronger current: you are approaching Richmond's Fall Line.",
+      "speed": 90,
+      "landingIntro": "You have reached Richmond at the Fall Line. The rocks and rapids you approached explain why cargo may need a different route.",
+      "fieldNote": {
+        "title": "Where the landscape changes",
+        "text": "At Richmond, the James crosses the Fall Line. This boundary separates the rolling Piedmont to the west from the lower Coastal Plain to the east. Falls and rapids interrupted navigation by large ships. Moving goods onward could require unloading and a different route.",
+        "keyTerms": [
+          "Richmond",
+          "James",
+          "Fall Line",
+          "Piedmont",
+          "Coastal Plain",
+          "Falls and rapids"
+        ]
+      },
+      "questions": {
+        "dock": [
+          {
+            "id": "r-d1",
+            "prompt": "Which Virginia city lies along the James at the Fall Line?",
+            "choices": [
+              "Richmond",
+              "Alexandria",
+              "Fredericksburg",
+              "Norfolk"
+            ],
+            "correct": 0,
+            "explanation": "Richmond developed at the falls of the James.",
+            "source": "nps-pocket",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Recall the place on your latest arrival map.",
+            "standards": [
+              "VS.1c"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "r-d2",
+            "prompt": "Which two regions meet at the Fall Line?",
+            "choices": [
+              "Piedmont and Coastal Plain",
+              "Blue Ridge and Appalachian Plateau",
+              "Valley and Ridge and Coastal Plain",
+              "Piedmont and Appalachian Plateau"
+            ],
+            "correct": 0,
+            "explanation": "The Fall Line separates the Piedmont and Coastal Plain.",
+            "source": "dcr-regions",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Think of the regions on either side of this part of the journey.",
+            "standards": [
+              "VS.1b"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "r-d3",
+            "prompt": "Which feature helps identify the Fall Line on Virginia’s rivers?",
+            "choices": [
+              "Rapids and waterfalls",
+              "Ocean beaches and dunes",
+              "Coral reefs and lagoons",
+              "Glaciers and ice sheets"
+            ],
+            "correct": 0,
+            "explanation": "Rivers cross drops in elevation at the Fall Line.",
+            "source": "dcr-regions",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Recall the change that interrupted your water journey.",
+            "standards": [
+              "VS.1b"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "r-d4",
+            "prompt": "Why could a large sailing ship have difficulty continuing inland past Richmond?",
+            "choices": [
+              "Rocky rapids interrupted navigation",
+              "The James ended at the Atlantic beach",
+              "The river crossed an Arctic glacier",
+              "Richmond was on a different continent"
+            ],
+            "correct": 0,
+            "explanation": "Falls and rapids limited passage by large vessels.",
+            "source": "nps-pocket",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Consider the water conditions immediately ahead.",
+            "standards": [
+              "VS.1c"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "r-d5",
+            "prompt": "Traveling west from the Fall Line, a traveler enters which region?",
+            "choices": [
+              "Piedmont",
+              "Coastal Plain",
+              "Appalachian Plateau",
+              "Valley and Ridge"
+            ],
+            "correct": 0,
+            "explanation": "The Piedmont lies west of the Fall Line.",
+            "source": "dcr-regions",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Picture the order of Virginia’s regions from the coast inland.",
+            "standards": [
+              "VS.1b"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          }
+        ],
+        "camp": [
+          {
+            "id": "r-c1",
+            "prompt": "Which landscape is most characteristic of the Piedmont?",
+            "choices": [
+              "Rolling hills",
+              "Ocean barrier islands",
+              "Long parallel mountain valleys",
+              "A high flat-topped western plateau"
+            ],
+            "correct": 0,
+            "explanation": "The Piedmont has a rolling upland landscape.",
+            "source": "dcr-regions",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Recall how the land differs from the low coastal region.",
+            "standards": [
+              "VS.1b"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "r-c2",
+            "prompt": "Traveling east from the Fall Line toward the bay, which region comes next?",
+            "choices": [
+              "Coastal Plain (Tidewater)",
+              "Blue Ridge Mountains",
+              "Valley and Ridge",
+              "Appalachian Plateau"
+            ],
+            "correct": 0,
+            "explanation": "The Coastal Plain lies east of the Fall Line.",
+            "source": "dcr-regions",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Trace your route back toward the beginning.",
+            "standards": [
+              "VS.1b"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "r-c3",
+            "prompt": "Goods arrive by ship below the falls but must continue inland. Which plan responds to the barrier?",
+            "choices": [
+              "Transfer the goods to another route",
+              "Wait for the mountains to disappear",
+              "Assume the ship can cross every rock",
+              "Send the goods away from their destination"
+            ],
+            "correct": 0,
+            "explanation": "Changing routes can overcome a navigation barrier.",
+            "source": "nps-pocket",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "The load and its current vehicle do not have to stay together.",
+            "standards": [
+              "VS.1c"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "r-c4",
+            "prompt": "Why might loading and unloading businesses develop near a river barrier?",
+            "choices": [
+              "Travelers need help transferring goods",
+              "All crops must grow in rapids",
+              "Barriers prevent people from trading anywhere",
+              "Only ocean fishing can occur there"
+            ],
+            "correct": 0,
+            "explanation": "Transfers create demand for handling and transport services.",
+            "source": "nps-riverfront",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Think about the work needed when a journey changes.",
+            "standards": [
+              "VS.1c"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "r-c5",
+            "prompt": "Which pair correctly compares land on either side of the Fall Line?",
+            "choices": [
+              "Rolling Piedmont to the west; lower Coastal Plain to the east",
+              "Coastal Plain to the west; Blue Ridge to the east",
+              "Appalachian Plateau to the east; coast to the west",
+              "Ocean beaches on both sides"
+            ],
+            "correct": 0,
+            "explanation": "The boundary joins rolling inland terrain and lower coastal terrain.",
+            "source": "dcr-regions",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Use both location and landscape to compare the choices.",
+            "standards": [
+              "VS.1b"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          }
+        ]
+      },
+      "heartCount": 3,
+      "targetTravelSeconds": 75,
+      "waterSaturation": 48
+    },
+    {
+      "id": "trail",
+      "name": "Carry it around",
+      "destination": "Base camp",
+      "length": 7855,
+      "mode": "walk",
+      "width": 220,
+      "bend": 27,
+      "current": 0,
+      "hazardCount": 39,
+      "kinds": [
+        "root"
+      ],
+      "tidal": false,
+      "objective": "Carry the crate up the shore trail. Use UP / W to walk. Keep to the tan path around the rapids.",
+      "arrival": "Cross the gold line to arrive at base camp automatically.",
+      "checkpoint": "camp",
+      "journalTitle": "Geography changes the journey",
+      "journal": "You changed from boat travel to carrying cargo on land. A portage is a way to move a boat or its cargo around an obstacle. Our short shore trail represents that idea; it is not a real marked route through Richmond.",
+      "observation": "The water is still moving, but your cargo follows a land route around the obstacle.",
+      "speed": 104,
+      "landingIntro": "You carried the cargo around the rapids and reached base camp. This is an imagined camp, not a marked real-world portage route.",
+      "fieldNote": {
+        "title": "Reading the journey",
+        "text": "The route began in Tidewater and reached the Fall Line, with the Piedmont beyond. Think about the evidence: deep water near Jamestown, crops leaving wharves, and rapids near Richmond. Each helps explain how geography and trade shaped life along the James.",
+        "keyTerms": [
+          "Tidewater",
+          "Fall Line",
+          "Piedmont",
+          "Jamestown",
+          "Richmond",
+          "geography",
+          "trade"
+        ]
+      },
+      "questions": {
+        "dock": [
+          {
+            "id": "b-d1",
+            "prompt": "A merchant changes routes because of waterfalls. What most directly influenced that decision?",
+            "choices": [
+              "Physical geography",
+              "The color of a uniform",
+              "The name of a ship",
+              "The day of the week"
+            ],
+            "correct": 0,
+            "explanation": "Land and water features can shape travel decisions.",
+            "source": "nps-pocket",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Identify the kind of obstacle described.",
+            "standards": [
+              "VS.1c"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "b-d2",
+            "prompt": "Which region lies between the Coastal Plain and the Blue Ridge Mountains?",
+            "choices": [
+              "Piedmont",
+              "Appalachian Plateau",
+              "Valley and Ridge",
+              "Eastern Shore"
+            ],
+            "correct": 0,
+            "explanation": "The Piedmont is between the coastward plain and Blue Ridge.",
+            "source": "dcr-regions",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Picture the regions in east-to-west order.",
+            "standards": [
+              "VS.1b"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "b-d3",
+            "prompt": "Which statement best explains the James River’s role in Virginia history?",
+            "choices": [
+              "It connected communities but had barriers to navigation",
+              "It allowed every ship to reach every inland place",
+              "It was useful only after railroads were built",
+              "It kept all settlements away from its banks"
+            ],
+            "correct": 0,
+            "explanation": "The James offered routes while its falls limited navigation.",
+            "source": "nps-pocket",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Account for both the helpful and difficult parts of the journey.",
+            "standards": [
+              "VS.1c"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "b-d4",
+            "prompt": "Which observation suggests a traveler has left Tidewater for the Piedmont?",
+            "choices": [
+              "The land becomes more rolling inland",
+              "The traveler reaches an ocean beach",
+              "The land becomes an offshore island",
+              "The traveler reaches the western plateau"
+            ],
+            "correct": 0,
+            "explanation": "Rolling uplands characterize the Piedmont.",
+            "source": "dcr-regions",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Compare the terrain in neighboring regions.",
+            "standards": [
+              "VS.1b"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "b-d5",
+            "prompt": "Why could two settlements on the same river have different transportation options?",
+            "choices": [
+              "River conditions can differ between locations",
+              "Every part of a river has identical depth",
+              "All settlements must use the same vehicles",
+              "Rivers never contain natural barriers"
+            ],
+            "correct": 0,
+            "explanation": "Navigability varies with local conditions.",
+            "source": "nps-pocket",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Compare the lower waterway with the falls.",
+            "standards": [
+              "VS.1c"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          }
+        ],
+        "camp": [
+          {
+            "id": "b-c1",
+            "prompt": "Which order follows the journey inland from Jamestown toward the region west of Richmond?",
+            "choices": [
+              "Coastal Plain → Fall Line → Piedmont",
+              "Piedmont → Atlantic Ocean → Coastal Plain",
+              "Blue Ridge → Coastal Plain → Appalachian Plateau",
+              "Valley and Ridge → Chesapeake Bay → Blue Ridge"
+            ],
+            "correct": 0,
+            "explanation": "The journey moves from the coastal region toward the Piedmont.",
+            "source": "dcr-regions",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Trace the trip from its coastal starting area.",
+            "standards": [
+              "VS.1b"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "b-c2",
+            "prompt": "Which evidence best explains a geographic reason for choosing Jamestown?",
+            "choices": [
+              "Ships could approach close to shore",
+              "Investors hoped for profits",
+              "A company raised money in England",
+              "Colonists later grew a crop for sale"
+            ],
+            "correct": 0,
+            "explanation": "Deep-water access was a physical advantage of the location.",
+            "source": "nps-site",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Choose evidence about the site itself rather than a business goal.",
+            "standards": [
+              "VS.3b"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "b-c3",
+            "prompt": "Which evidence shows agriculture influenced colonial Virginia’s trade?",
+            "choices": [
+              "Harvested tobacco was shipped to buyers abroad",
+              "A traveler watched water flowing past",
+              "A crew tied an empty boat to a post",
+              "A cart stood beside an unused building"
+            ],
+            "correct": 0,
+            "explanation": "Crop exports connected farms with international trade.",
+            "source": "nps-tobacco",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Look for a connection between production and exchange.",
+            "standards": [
+              "VS.4a"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "b-c4",
+            "prompt": "A historian studies wharves, imported tools, and exported crops. Which conclusion is best supported?",
+            "choices": [
+              "Waterways helped connect Virginia to other places",
+              "Colonial Virginia had no outside trade",
+              "River settlements never used imported goods",
+              "Every colonial journey took place on foot"
+            ],
+            "correct": 0,
+            "explanation": "The evidence points to transport and exchange by water.",
+            "source": "nps-riverfront",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Look for the shared purpose of the evidence.",
+            "standards": [
+              "VS.1c"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          },
+          {
+            "id": "b-c5",
+            "prompt": "Which feature separates the Coastal Plain from the Piedmont?",
+            "choices": [
+              "Fall Line",
+              "Chesapeake Bay",
+              "Atlantic Ocean",
+              "Blue Ridge Mountains"
+            ],
+            "correct": 0,
+            "explanation": "The Fall Line marks the regional transition.",
+            "source": "dcr-regions",
+            "verified": "2026-09-16",
+            "verificationStatus": "source-reviewed",
+            "hint": "Recall the boundary encountered near Richmond.",
+            "standards": [
+              "VS.1b"
+            ],
+            "region": "Fall Line / Piedmont–Coastal Plain transition",
+            "itemType": "original-single-select",
+            "alignmentBasis": "2023 adopted standards; original practice informed by public released SOL item formats"
+          }
+        ]
+      },
+      "heartCount": 2,
+      "targetTravelSeconds": 75,
+      "waterSaturation": 53
+    }
+  ],
+  "sources": [
+    {
+      "title": "NPS: A Short History of Jamestown",
+      "url": "https://www.nps.gov/jame/learn/historyculture/a-short-history-of-jamestown.htm"
+    },
+    {
+      "title": "NPS: Jamestown Riverfront",
+      "url": "https://www.nps.gov/jame/learn/historyculture/new-towne-the-jamestown-riverfront-1630-1690.htm"
+    },
+    {
+      "title": "NPS: James River Pocket Guide",
+      "url": "https://www.nps.gov/cajo/planyourvisit/upload/James-River-Pocket-Guide-508-2.pdf"
+    },
+    {
+      "title": "Virginia DWR: Non-Tidal James River Management Report",
+      "url": "https://dwr.virginia.gov/wp-content/uploads/media/James-River-Non-Tidal-Management-Report-2021.pdf"
+    }
+  ],
+  "version": "0.11.0",
+  "questionSetsPerStop": 2,
+  "questionsPerSet": 5,
+  "questionSources": {
+    "nps-history": "https://www.nps.gov/jame/learn/historyculture/a-short-history-of-jamestown.htm",
+    "nps-pocket": "https://www.nps.gov/cajo/planyourvisit/upload/James-River-Pocket-Guide-508-2.pdf",
+    "nps-riverfront": "https://www.nps.gov/jame/learn/historyculture/new-towne-the-jamestown-riverfront-1630-1690.htm",
+    "dwr": "https://dwr.virginia.gov/wp-content/uploads/media/James-River-Non-Tidal-Management-Report-2021.pdf",
+    "geography": "2023 VS.1 geography; selected concepts cross-checked against VDOE/secondary guide and source notes in docs/SOURCES.md",
+    "game": "Authored simulation rule or fictional scenario, not a historical claim",
+    "regions": "https://pubs.usgs.gov/wsp/wsp2374/pdf/wsp_2374.pdf",
+    "portage": "https://www.nps.gov/places/portage-route.htm",
+    "nps-site": "https://www.nps.gov/jame/learn/historyculture/why-settle-on-jamestown.htm",
+    "nps-tobacco": "https://www.nps.gov/jame/learn/historyculture/tobacco-colonial-cultivation-methods.htm",
+    "dcr-regions": "https://www.dcr.virginia.gov/recreational-planning/document/srreportjamesriver.pdf"
+  },
+  "curriculum": {
+    "edition": "2023",
+    "standardsDocument": "https://wischools.org/wp-content/uploads/History-and-SS-Standards.pdf",
+    "releasedFormatReference": "https://www.doe.virginia.gov/home/showpublisheddocument/20875/638043643497370000",
+    "officialTestItems": false,
+    "scope": "Selected regional geography, Jamestown, and colonial agriculture; not a full SOL blueprint assessment"
+  }
+}
