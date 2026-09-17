@@ -1,0 +1,13 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {fileURLToPath} from 'node:url';
+const root=fileURLToPath(new URL('../',import.meta.url));
+const read=p=>readFileSync(root+p,'utf8');
+const pack=JSON.parse(read('games/virginia-navigator/content/virginia.json'));
+const map=JSON.parse(read('games/virginia-navigator/content/boundaries.json'));
+let html=read('games/virginia-navigator/src/index.html');
+html=html.replace('/* STYLES */',()=>read('games/virginia-navigator/src/style.css'));
+const js='const CONTENT='+JSON.stringify(pack)+';const BOUNDARIES='+JSON.stringify(map)+';\n'+read('games/virginia-navigator/src/model.js').replaceAll('export ','')+'\n'+read('games/virginia-navigator/src/game.js');
+html=html.replace('/* GAME */',()=>js.replaceAll('</script','<\\/script'));
+mkdirSync(root+'releases',{recursive:true});
+writeFileSync(root+'releases/Virginia-Navigator.html',html);
+console.log('Built releases/Virginia-Navigator.html ('+Buffer.byteLength(html)+' bytes)');

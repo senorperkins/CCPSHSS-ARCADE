@@ -1,0 +1,16 @@
+{
+ "version":1,"title":"Virginia Navigator","standards":["VS.1b (partial)","VS.1c (partial)"],
+ "rivers":[
+  {"id":"james","name":"James River","points":[[-76.3,36.96],[-76.55,37.02],[-76.68,37.19],[-76.78,37.22],[-76.98,37.24],[-77.15,37.32],[-77.25,37.33],[-77.3,37.42],[-77.44,37.53],[-77.49,37.56]],"city":"Richmond","cityIndex":8,"label":[-77.02,37.12],"fall":8},
+  {"id":"york","name":"York River","points":[[-76.39,37.25],[-76.51,37.31],[-76.61,37.4],[-76.7,37.46],[-76.79,37.53]],"city":"Yorktown","cityIndex":1,"label":[-76.7,37.32]},
+  {"id":"rappahannock","name":"Rappahannock River","points":[[-76.29,37.61],[-76.43,37.65],[-76.57,37.76],[-76.7,37.83],[-76.88,37.93],[-77.03,38.09],[-77.17,38.18],[-77.3,38.2],[-77.46,38.3]],"city":"Fredericksburg","cityIndex":8,"label":[-77.09,37.91]},
+  {"id":"potomac","name":"Potomac River","points":[[-76.25,37.95],[-76.48,38.05],[-76.65,38.15],[-76.89,38.21],[-77.03,38.33],[-77.24,38.38],[-77.27,38.5],[-77.13,38.64],[-77.04,38.8]],"city":"Alexandria","cityIndex":8,"label":[-76.63,38.38]}
+ ],
+ "missions":[
+  {"river":"james","title":"A delivery to Richmond","brief":"Your cargo begins at the mouth of the James. Follow the river inland to Richmond, then carry it around the rapids into the Piedmont.","direction":1,"portage":true,"discovery":"At Richmond, the Fall Line interrupts river travel. Moving goods between boats and land helped make this a trading center."},
+  {"river":"york","title":"Down the York to the bay","brief":"Launch at West Point, where the York begins. Navigate southeast past Yorktown to the Chesapeake Bay. Use the compass and the river bends.","direction":-1,"start":4,"discovery":"Yorktown is on the York River. The river connects this community to the Chesapeake Bay and wider water routes."},
+  {"river":"rappahannock","title":"Find Fredericksburg","brief":"Start at the bay and follow the Rappahannock inland. Deliver your cargo to Fredericksburg. Avoid jumping across the peninsulas.","direction":1,"discovery":"Fredericksburg lies on the Rappahannock at the Fall Line. Rivers offered routes inland, but rapids limited boat travel."},
+  {"river":"potomac","title":"Alexandria’s water road","brief":"Leave Alexandria and follow the Potomac downstream to the Chesapeake Bay. Notice how far north this river is compared with the James.","direction":-1,"start":8,"discovery":"Alexandria is on the Potomac, the northernmost of these four rivers. All four connect to the Chesapeake Bay."}
+ ]
+}
+

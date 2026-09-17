@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; font-src 'none'; base-uri 'none'; form-action 'none'"><title>River Expedition · James River · CCPS HSS Arcade</title><style>/* STYLES */</style></head>
+<body>
+<main><section class="cabinet" aria-label="River Expedition game">
+<div class="hud"><div><span class="small-label" id="legNumber">YOUR NEXT ADVENTURE</span><strong id="legTitle">The James is calling.</strong></div><div id="hearts" class="hearts" role="status" aria-live="polite"></div><div class="hud-right"><button id="mapButton" title="Expedition map">Map</button><button id="journalButton">Journal</button><button id="helpButton" title="Controls and accessibility">Help</button><button id="pauseButton" aria-label="Pause game">Ⅱ <span>Pause</span></button></div></div>
+<div class="playfield"><canvas id="game" tabindex="0" aria-label="River navigation. Use W A S D or arrow keys to steer. Landings happen automatically. P pauses. The Map and Journal buttons explain the journey."></canvas>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<div class="route-progress" aria-label="Progress to next landing"><span id="routeFill"></span></div>
+<div id="overlay" class="overlay"><section id="dialog" class="panel" role="dialog" aria-modal="true" aria-labelledby="panelTitle" tabindex="-1"></section></div>
+</div>
+<div class="control-bar"><div><span class="small-label" id="modeLabel">FIELD EXPEDITION / 01</span><p id="objective">An upstream adventure, one discovery at a time.</p></div></div>
+<div class="touch-row" id="touchControls" hidden><div class="dpad" role="group" aria-label="Directional controls"><button data-direction="up" class="up" aria-label="Paddle faster or walk forward">▲</button><button data-direction="left" class="left" aria-label="Steer or walk left">◀</button><button data-direction="down" class="down" aria-label="Slow boat or walk backward">▼</button><button data-direction="right" class="right" aria-label="Steer or walk right">▶</button></div></div>
+</section><footer><span>Five hearts. Fresh hazards. No game over.</span><span>Compressed learning simulation · not a navigation chart</span></footer></main>
+<script>/* GAME */</script></body></html>
+

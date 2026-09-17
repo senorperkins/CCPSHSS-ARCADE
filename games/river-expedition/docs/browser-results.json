@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "version": "0.11.0",
+  "checks": [
+    "No future map locations revealed at launch; desktop control pad hidden",
+    "Live keyboard and mouse steering",
+    "Visible heart loss, zero-heart repair screen, protected recovery",
+    "Collectible heart restores one, is consumed once, and cannot exceed maximum",
+    "All four automatic landings from the opposite bank; dock map before each set; all 40 required correct answers; four intervening blurbs; non-answer hint dialogs and full-choice retries without heart penalties; progressive map reveal",
+    "Replay changes hazard seed/layout and clears discoveries",
+    "Chromebook-sized playfield and HUD remain visible without persistent instructions",
+    "Touch controls default on for touch devices, steer, release, and fit without overflow"
+  ],
+  "errors": [],
+  "network": [],
+  "browser": "153.0.8010.48",
+  "note": "Travel is accelerated between landings for UI testing. Model tests simulate full routes; questions are all exercised through UI."
+}
