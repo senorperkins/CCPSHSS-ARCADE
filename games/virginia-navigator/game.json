@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "template": "src/index.html",
+  "styles": "src/style.css",
+  "output": "Virginia-Navigator.html",
+  "data": [
+    {
+      "name": "CONTENT",
+      "path": "content/virginia.json"
+    },
+    {
+      "name": "BOUNDARIES",
+      "path": "content/boundaries.json"
+    }
+  ],
+  "scripts": [
+    "src/model.js",
+    "src/game.js"
+  ],
+  "format": "compact"
+}

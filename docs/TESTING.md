@@ -11,3 +11,7 @@ Tested in installed desktop Chrome using an isolated Playwright context with `of
 The initial browser test found overlapping hit targets at Richmond. Target radii now respect adjacent marker distance. Zoom is provided for closely spaced markers on small screens.
 
 Limits: touch is emulated, not tested on a physical tablet; no managed Chromebook, screen-reader, or classroom playtest yet. Whole-map labels are intentionally small on phones; use Zoom. Reload starts a fresh expedition.
+
+## Current repeatable commands
+
+Run npm run test:virginia for model/export checks and npm run test:browser:virginia for offline Chrome keyboard/touch completion of all four routes. The release is dist/Virginia-Navigator.html. Set PLAYWRIGHT_MODULE and CHROME_PATH when using existing local installations.
