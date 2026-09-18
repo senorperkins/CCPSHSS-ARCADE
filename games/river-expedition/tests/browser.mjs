@@ -3,7 +3,7 @@ import {fileURLToPath,pathToFileURL} from 'node:url';
 import {mkdirSync,writeFileSync} from 'node:fs';
 import assert from 'node:assert/strict';
 const require=createRequire(import.meta.url),{chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
-const root=fileURLToPath(new URL('../../../',import.meta.url)),evidence=root+'games/river-expedition/docs/';mkdirSync(evidence,{recursive:true});
+const root=fileURLToPath(new URL('../../../',import.meta.url)),evidence=root+'test-results/river-expedition/';mkdirSync(evidence,{recursive:true});
 const browser=await chromium.launch({headless:true,...(process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:{})});
 const checks=[],errors=[],network=[];
 try{

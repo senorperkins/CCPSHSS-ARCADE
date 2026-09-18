@@ -13,7 +13,7 @@ Bundled `content/hydrography.json` contains simplified, WGS84 geometry downloade
 
 Projection uses approximately equal ground scale around latitude 37.5° (longitude scaled by cosine of latitude). The 20 km scale is approximate. Line width is exaggerated for readability; shoreline and hydrography have different source scales. This is a classroom reference, not a navigation chart. Fictional supply/camp locations retain schematics and are not assigned fabricated geographic pins. This map covers the expedition corridor, not every Virginia river.
 
-The exporter embeds these local data directly; no network connection or map service is used by students. Edit geography in source JSON and run `node tools/build-river-expedition.mjs` to rebuild.
+The exporter embeds these local data directly; no network connection or map service is used by students. Edit geography in source JSON and run `npm run build:river` to rebuild.
 
 ## Verification
 

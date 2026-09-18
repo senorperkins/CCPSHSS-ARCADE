@@ -26,7 +26,7 @@ Every launch/replay draws a new random seed. Hazards are generated within author
 From the repository root, using Node.js 20+:
 
 ```sh
-node tools/build-river-expedition.mjs
+npm run build:river
 node --test games/river-expedition/tests/model.test.mjs
 ```
 
@@ -57,3 +57,7 @@ Separate [QA](docs/QA-0.6.md) and [adversarial gameplay](docs/REDTEAM-0.6.md) pa
 Version 0.7 adds an illustrated first-play introduction, branch/rock variants, detailed shallow-water art, and unboxed hearts. See [asset QA](docs/ASSET-QA-0.7.md). Restarts skip the introduction.
 
 Version 0.9 raises starting pace, increases obstacles, and refines canoe/shadow art; see [QA notes](docs/QA-0.9.md).
+
+## Shared build manifest
+
+The game.json manifest selects source files for the shared exporter. Run npm run build -- river-expedition (or npm run build:river) from the repository root. npm run test:river rebuilds and runs this game's model/export checks; npm run test:all rebuilds and tests both games. npm run test:browser:river runs optional offline Chrome integration (Playwright required). Both games' flat dist/ HTML files are intentionally committed. Browser evidence is written under ignored test-results/; existing documentation screenshots remain historical evidence. See [shared build guidance](../../shared/build/README.md) and [third-party licenses](../../THIRD_PARTY_LICENSES.md).

@@ -1,0 +1,23 @@
+node_modules/
+.npm/
+.cache/
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+blob-report/
+work/
+*.log
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+# Offline distribution files are intentionally committed.
+!/dist/
+!/dist/*.html

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "template": "src/index.html",
+  "styles": "src/style.css",
+  "output": "River-Expedition-James-River.html",
+  "data": [
+    {
+      "name": "LEVEL",
+      "path": "content/james.json"
+    },
+    {
+      "name": "MAP_DATA",
+      "path": "content/boundaries.json",
+      "raw": true
+    },
+    {
+      "name": "HYDRO",
+      "path": "content/hydrography.json",
+      "raw": true
+    }
+  ],
+  "scripts": [
+    "assets/sprites.js",
+    "src/model.js",
+    "src/review.js",
+    "src/render.js",
+    "src/input.js",
+    "src/game.js"
+  ],
+  "format": "annotated",
+  "validator": "validate-content.mjs"
+}
